@@ -1,0 +1,15 @@
+/* General styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+/* Styles for main content */
+.hero {
+    background-image: url("assets/däck\ 1\ \(1\).JPG");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
