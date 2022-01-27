@@ -19,6 +19,29 @@
 }
 
 .header {
-    font-size: x-large;
+    height: 100%;
     font-family: "Bernard MT Std";
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.readMore {
+    font-size: 1.5em;
+    padding: 10px;
 }
