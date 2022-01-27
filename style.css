@@ -1,3 +1,7 @@
+/* Customers preferred font-family*/
+@import url(//db.onlinewebfonts.com/c/d61f92ac75a45d13545d15d0cf2e4d67?family=Bernard+MT+Std);
+@font-face {font-family: "Bernard MT Std"; src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot"); src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff") format("woff"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.svg#Bernard MT Std") format("svg"); } 
+
 /* General styles */
 * {
     padding: 0;
@@ -12,4 +16,9 @@
     background-position: center;
     height: 100vh;
     width: 100vw;
+}
+
+.header {
+    font-size: x-large;
+    font-family: "Bernard MT Std";
 }
