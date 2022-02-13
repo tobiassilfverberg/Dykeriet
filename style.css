@@ -1,13 +1,21 @@
 /* Customers preferred font-family*/
 @import url(//db.onlinewebfonts.com/c/d61f92ac75a45d13545d15d0cf2e4d67?family=Bernard+MT+Std);
 @font-face {font-family: "Bernard MT Std"; src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot"); src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff") format("woff"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.svg#Bernard MT Std") format("svg"); } 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* General styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 } 
+
+h1, h2, h3, h4, h5 {
+    font-family: "Bernard MT Std";
+    padding: 5px;
+    letter-spacing: 1px;
+}
 
 /* Styles for main content */
 .hero {
@@ -20,7 +28,6 @@
 
 .header {
     height: 100%;
-    font-family: "Bernard MT Std";
     text-align: center;
     color: white;
     display: flex;
@@ -41,7 +48,122 @@
     padding: 10px;
 }
 
+.headerTitle {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
 .readMore {
-    font-size: 1.5em;
+    font-size: 18px;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.parallaxInfo {
+    background-image: url("assets/däck\ 1\ \(1\).JPG");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.aboutUs {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.parallaxMarintCenter {
+    background-image: url("assets/marintcenter2.webp");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-decoration: underline;
+    color: black;
+}
+
+.link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+footer b {
+    font-size: large;
+}
+
+footer .link {
+    color: white;
+}
+
+footer .link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footerInfo {
+    padding: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    .logo img {
+        height: 150px;
+        width: 150px;
+    }
+    .headerTitle {
+        font-size: 22px;
+    }
+    .readMore {
+        font-size: 22px;
+    }
+    .aboutUs {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .info {
+        padding: 10px;
+        max-width: 500px;
+        font-size: 22px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
