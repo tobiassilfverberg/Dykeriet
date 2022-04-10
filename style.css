@@ -33,6 +33,10 @@ h5 {
 	letter-spacing: 1px;
 }
 
+.m-top10 {
+	margin-top: 10px;
+}
+
 /* Styles for main content */
 .hero {
 	background-image: url("assets/däck\ 1\ \(1\).JPG");
@@ -168,36 +172,58 @@ footer .link:hover {
 		width: 100%;
 		margin-bottom: -6px;
 	}
+	.infoContainer:nth-child(even) {
+		flex-direction: column;
+		margin-top: -5px;
+	}
+	.imageBackground {
+		max-width: 80%;
+		margin-top: 0px;
+	}
+	.textHolder {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.info {
+		padding: 15px;
+		width: 50%;
+		margin: 0px;
+		text-align: left;
+	}
+	.wide {
+		width: 100%;
+	}
+	footer {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+@media screen and (min-width: 1030px) {
 	.infoContainer {
 		flex-direction: row;
 	}
 	.infoContainer:nth-child(even) {
 		flex-direction: row-reverse;
-		margin-top: -5px;
 	}
 	.imageBackground {
 		max-width: 50%;
-		margin-top: 0px;
-	}
-	.textHolder {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.aboutUs {
-		width: 100%;
-		flex-direction: row;
-		justify-content: center;
 	}
 	.info {
 		padding: 10px;
-		width: 50%;
-		margin: 0px;
-		text-align: left;
 	}
-	footer {
-		flex-direction: row;
-		justify-content: space-evenly;
+	.textHolder {
+		width: 50%;
+	}
+	.wide {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.textHolder {
+		flex-direction: column;
 	}
 }
