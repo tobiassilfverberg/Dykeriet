@@ -29,7 +29,6 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: "Bernard MT Std";
 	letter-spacing: 1px;
 }
 
@@ -39,7 +38,12 @@ h5 {
 
 /* Styles for main content */
 .hero {
-	background-image: url("assets/däck\ 1\ \(1\).JPG");
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.1) 0%,
+			rgba(0, 0, 0, 0.1) 100%
+		),
+		url("assets/landingpageimg.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -48,41 +52,49 @@ h5 {
 
 .header {
 	height: 100%;
-	text-align: center;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.logo {
-	width: 100%;
-	display: flex;
-	align-items: start;
-}
-
-.logo img {
-	height: 100px;
-	width: 100px;
-	padding: 10px;
-}
-
-.headerTitle {
-	background-color: rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 130px;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	padding: 10px;
+}
+
+.headerTitle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
 	width: 250px;
 	border-radius: 15px;
 	font-size: 18px;
+	padding: 10px;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .readMore {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
 	font-size: 18px;
 	padding: 10px;
+	color: white;
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 15px;
 	margin-bottom: 10px;
