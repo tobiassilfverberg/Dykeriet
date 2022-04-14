@@ -1,20 +1,4 @@
-/* Customers preferred font-family*/
-@import url(//db.onlinewebfonts.com/c/d61f92ac75a45d13545d15d0cf2e4d67?family=Bernard+MT+Std);
-@font-face {
-	font-family: "Bernard MT Std";
-	src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot");
-	src: url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.eot?#iefix")
-			format("embedded-opentype"),
-		url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff2")
-			format("woff2"),
-		url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.woff")
-			format("woff"),
-		url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.ttf")
-			format("truetype"),
-		url("//db.onlinewebfonts.com/t/d61f92ac75a45d13545d15d0cf2e4d67.svg#Bernard MT Std")
-			format("svg");
-}
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* General styles */
 * {
@@ -30,6 +14,7 @@ h3,
 h4,
 h5 {
 	letter-spacing: 1px;
+	font-family: "Arvo", serif;
 }
 
 .m-top10 {
@@ -74,7 +59,7 @@ h5 {
 	border-radius: 15px;
 	font-size: 18px;
 	padding: 10px;
-	animation: fadeInAnimation ease 3s;
+	animation: fadeInAnimation ease 5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -86,18 +71,6 @@ h5 {
 	100% {
 		opacity: 1;
 	}
-}
-
-.readMore {
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	font-size: 18px;
-	padding: 10px;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 15px;
-	margin-bottom: 10px;
 }
 
 main {
